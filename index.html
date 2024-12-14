@@ -1,8 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Ma première page HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css106.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<h1>Salut Github !</h1>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="page2.html">Liens</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="photo">
+        <div class="photo-container">
+            <img src="imagecv.jpg" alt="Photo de profil" class="profile-photo">
+        </div>
+    </section>
+
+    <section id="about">
+        	<h2>Qui suis je?</h2>
+			<p>Bienvenue sur mon portfolio!
+			Je suis Anastasie Chauleau, une étudiante en développement web. A côté de mes études, j'aime les activités créatives comme le crochet, la couture et le dessin. Je suis diplômée d'une licence de gestion et je travaille en restauration rapide à côté de mes études. J'habite à Blois en région centre:
+			</p>
+			<br>
+			<p align="center"> 
+			<iframe align="center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86121.70226108439!2d1.2224966617436088!3d47.5813444414691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3579523c8d25d%3A0x40dc8d7053829b0!2s41000%20Blois!5e0!3m2!1sfr!2sfr!4v1734188590604!5m2!1sfr!2sfr" width="600" height="450" ></iframe></p>
+</section>
+
+    <section id="skills">
+        <h2>Compétences et Passions</h2>
+        <div class="skills-passions">
+            <div class="skills">
+                <h3>Compétences</h3>
+                <ul>
+                    <li><i></i> Développement Web</li>
+                    <li><i></i> Esprit d'équipe</li>
+                </ul>
+            </div>
+            <div class="passions">
+                <h3>Passions</h3>
+               
+                <ul>
+                    <li><i></i> Crochet</li>
+                    <li><i></i> Dessin</li>
+                    <li><i></i> Couture</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+	
+
+    <footer>
+    </footer>
 </body>
+
 </html>
